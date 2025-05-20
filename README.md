@@ -1,23 +1,60 @@
-# Todo App README
+# Todo-App mit Vaadin
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+Eine einfache Todo-Webanwendung entwickelt mit **Vaadin**, einem Java Fullstack Framework.  
+Die App ermöglicht das Anlegen, Bearbeiten und Löschen von Aufgaben mit Persistenz über eine **H2 In-Memory Datenbank**.
 
-To start the application in development mode, import it into your IDE and run the `Application` class. 
-You can also start the application from the command line by running: 
+---
+
+## Features
+
+- Vollständig in Java entwickeltes Fullstack-Webprojekt mit Vaadin
+- Aufgabenverwaltung: Erstellen, Bearbeiten, Löschen von Todo-Items
+- Statusverwaltung (erledigt/offen)
+- Persistenz mit H2 In-Memory Datenbank (keine externe Datenbank nötig)
+- Serverseitiges State Management
+- Responsive UI dank Vaadin-Komponenten
+
+---
+
+## Technologie-Stack
+
+- **Frontend & Backend:** Vaadin Flow (Java)
+- **Datenbank:** H2 In-Memory
+- **Build-Tool:** Maven
+- **Java-Version:** 17+
+
+---
+
+## Schnellstart
+
+1. schnellstart mit Docker Image
+
+Du kannst die Anwendung schnell starten, ohne sie lokal bauen zu müssen, indem du das Docker-Image nutzt.
+
+Falls du das Image selbst bauen möchtest, verwende dazu den folgenden Befehl:
 
 ```bash
-./mvnw
+
+docker build -t vaadin-todo-app .
+
 ```
 
-To build the application in production mode, run:
+Starte anschließend die Anwendung mit:
 
 ```bash
-./mvnw -Pproduction package
+
+docker run -p 8080:8080 vaadin-todo-app
+
 ```
 
-## Getting Started
+\*\*\*\* Öffne dann im Browser http://localhost:8080, um die Todo-App zu verwenden.
 
-The [Getting Started](https://vaadin.com/docs/latest/getting-started) guide will quickly familiarize you with your new
-Todo App implementation. You'll learn how to set up your development environment, understand the project 
-structure, and find resources to help you add muscles to your skeleton — transforming it into a fully-featured 
-application.
+2. Repository klonen
+
+   ```bash
+   git clone <repo-url>
+   cd todo-vaadin-app
+   ./mvnw clean install
+   ```
+
+   Öffne dann im Browser http://localhost:8080, um die Todo-App zu verwenden.
