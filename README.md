@@ -27,7 +27,16 @@ Die App ermöglicht das Anlegen, Bearbeiten und Löschen von Aufgaben mit Persis
 
 ## Schnellstart
 
-1. schnellstart mit Docker Image
+1. Repository klonen:
+
+```bash
+
+git clone https://github.com/SteveLoic/todo-app-vaadin.git
+cd todo-app-vaadin
+
+```
+
+2. schnellstart mit Docker Image
 
 Du kannst die Anwendung schnell starten, ohne sie lokal bauen zu müssen, indem du das Docker-Image nutzt.
 
@@ -49,12 +58,14 @@ docker run -p 8080:8080 vaadin-todo-app
 
 \*\*\*\* Öffne dann im Browser http://localhost:8080, um die Todo-App zu verwenden.
 
-2. Repository klonen
+3. Repository klonen
 
    ```bash
-   git clone <repo-url>
+
+   git clone  https://github.com/SteveLoic/todo-app-vaadin.git
    cd todo-vaadin-app
    ./mvnw clean install
+
    ```
 
    Öffne dann im Browser http://localhost:8080, um die Todo-App zu verwenden.
